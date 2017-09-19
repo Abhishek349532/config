@@ -5,20 +5,3 @@ info:
 logging:
   config: logback-dev.xml
 
-#TODO: Uncomment this to register to service monitor (applicable for Digital Self Service Melbourne only)
-#spring:
-#  boot:
-#    admin:
-#      url: http://pi-service-monitor-dev/pi-service-monitor
-
-#TODO: Replace with actual service
-dependent-service:
-  address:
-    base: http://example.service.com
-    service: /api/customer/{name}
-    health: /health
-  username: S1235678
-  password: G9N5xXClbBqIu/YWEgrwKA==
-  downtime:
-    enabled: false
-    period: "23:55:00-00:05:00 Australia/Sydney"
